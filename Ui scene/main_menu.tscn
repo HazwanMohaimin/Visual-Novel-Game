@@ -1,0 +1,80 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2qpto05ss6tp"]
+
+[ext_resource type="Script" path="res://Script/main_menu.gd" id="1_e6vmw"]
+[ext_resource type="Texture2D" uid="uid://cfp3hkhu7itbg" path="res://Game Assets BackGround/School Assets/smp_classroom1_evening1.png" id="2_rv2hu"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_4nayd"]
+line_spacing = 10.0
+font_size = 95
+outline_size = 15
+outline_color = Color(0.165656, 0.165656, 0.165656, 1)
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_e6vmw")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_rv2hu")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.176471, 0.164706, 0.105882, 0.733333)
+
+[node name="Version Text" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -252.0
+offset_top = -148.0
+offset_right = -106.0
+offset_bottom = -125.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(1.44, 1.44)
+
+[node name="Version Text" type="Label" parent="Version Text"]
+layout_mode = 2
+text = "Alpha Build Ver 0.1
+"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+offset_left = 127.0
+offset_top = 205.0
+offset_right = 620.0
+offset_bottom = 335.0
+text = "Game Title
+"
+label_settings = SubResource("LabelSettings_4nayd")
+
+[node name="Start Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -707.0
+offset_top = -4.0
+offset_right = -452.0
+offset_bottom = 96.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 45
+text = "Start Game"

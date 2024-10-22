@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://7bbjbvsixrgb"]
+
+[ext_resource type="Texture2D" uid="uid://3nsgkoj30dg1" path="res://Game Assets BackGround/Personal Room Assets/Personal Room/pra_a1_day1.png" id="1_lmrq8"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+
+[node name="Sprite3D" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6.5)
+texture = ExtResource("1_lmrq8")
